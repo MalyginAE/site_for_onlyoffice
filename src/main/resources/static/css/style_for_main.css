@@ -1,0 +1,23 @@
+
+input[type=submit], input[type=button] {
+    padding: 13px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgba(191, 173, 151, 1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+}
+
+a, #addFile {
+    padding: 13px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgba(191, 173, 151, 1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+
+}

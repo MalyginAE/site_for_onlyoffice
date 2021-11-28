@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/styles/css/style_for_main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form enctype="multipart/form-data" method="Post" action="/download">
+    <input type="file" name="file" id="fileInput" style="display: none">
+    <button type="button" id="addFile" onclick="document.getElementById('fileInput').click()">Выберите файл</button>
+    <input type="submit" id="submit_file" value="Отправить">
+</form>
+<br>
+<form enctype="multipart/form-data" th:method="GET" th:action="@{http://localhost:8080/covers/2.pdf}">
+    <input type="submit" id="downloadFile" value="Открыть в браузере">
+</form>
+<br>
+<a th:href="${linkToFile}"> скачать</a>
+<script src="/js/send.js"></script>
+</body>
+</html>
